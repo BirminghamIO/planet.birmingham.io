@@ -157,7 +157,14 @@
               <TMPL_IF title>
                 <div class="panel-heading">
                   <h3 class="panel-title"><a href="<TMPL_VAR link ESCAPE="HTML">">
-                    <TMPL_VAR title></a><TMPL_IF author> <small>by <TMPL_VAR author ESCAPE="HTML"></small></TMPL_IF>
+                    <TMPL_VAR title></a>
+                    <TMPL_IF channel_name>
+                      <small>by <TMPL_VAR channel_name>
+                        <TMPL_IF channel_twitter>
+                          (<a href="https://twitter.com/<TMPL_VAR channel_twitter>">@<TMPL_VAR channel_twitter></a>)
+                        </TMPL_IF>
+                      </small>
+                    </TMPL_IF>
                   </h3>
                 </div>
               </TMPL_IF>

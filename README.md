@@ -27,6 +27,7 @@ Adding new blogs is a question of editing `birminghamio.ini` and adding a new se
 
     [http://url/for/website/feed]
     name = Site Owner's Name
+    twitter = Twitter Username
     glyphicon = Bootstrap Glyphicon
 
 Note that you can't put the URL of the website *itself* in; it has to be the URL for the feed. You can inspect the site for the feed URL, or use https://pypi.python.org/pypi/feedfinder or similar tools.
