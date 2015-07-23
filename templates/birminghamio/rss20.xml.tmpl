@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:twitter="https://dev.twitter.com/">
+	xmlns:twitter="https://dev.twitter.com/"
+	xmlns:pbio="http://planet.birmingham.io/">
 
 <channel>
 	<title><TMPL_VAR name></title>
@@ -32,6 +33,9 @@
 	</TMPL_IF>
 	<TMPL_IF channel_twitter>
 		<twitter:creator><TMPL_VAR channel_twitter></twitter:creator>
+	</TMPL_IF>
+	<TMPL_IF channel_name>
+		<pbio:realName><TMPL_VAR channel_name></pbio:realName>
 	</TMPL_IF>
 	<TMPL_IF enclosure_href>
         <enclosure url="<TMPL_VAR enclosure_href ESCAPE="HTML">" length="<TMPL_VAR enclosure_length>" type="<TMPL_VAR enclosure_type>"/>
