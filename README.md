@@ -1,5 +1,3 @@
-# Introduction
-
 Configuration repo for [Planet Birmingham](http://planet.birmingham.io), using [Planet Venus](http://intertwingly.net/code/venus/) as the provider.
 
 # Instructions
